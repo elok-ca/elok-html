@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(smkn.jpg); /* Ganti dengan URL atau path foto latar belakang */
+            background-size: cover;
+            background-position: center;
+            
+            position: relative;
+            z-index: -1; /* Mengatur z-index untuk latar belakang */
+        }
+
+        .cover {
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px; /* Sesuaikan ukuran logo */
+            height: auto;
+            animation: zoomIn 1s ease; /* Menambahkan animasi */
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #ffffff; /* Warna teks */
+            opacity: 0; /* Awalnya tersembunyi */
+            animation: fadeIn 1s ease forwards 0.5s; /* Menambahkan animasi dengan delay */
+        }
+
+        .button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ffceee; /* Warna tombol */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Menghilangkan garis bawah */
+            animation: fadeIn 1s ease forwards 1s; /* Animasi muncul dengan delay */
+        }
+
+        /* Animasi untuk logo */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Animasi untuk teks dan tombol */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cover">
+    <img src="Logo-SMKN-7-Semarang.png" alt="Logo Sekolah" class="logo">
+    <h1>Selamat Datang di Website Elok</h1>
+    <a href= "https://elok-ca.github.io/MATSEN/" class="button">Masuk ke Website</a>
+</div>
+
+</body>
+</html>
